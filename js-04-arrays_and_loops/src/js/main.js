@@ -76,3 +76,20 @@ console.log("Lista actual:", shoppingList);
 // 4. shift(): Elimina el PRIMERO y lo devuelve
 const firstRemoved = shoppingList.shift();
 console.log(`Eliminado con shift: ${firstRemoved}`); // "Café"
+
+// --- Método splice() ---
+// Permite eliminar o agregar elementos en cualquier posición
+const colors = ["Rojo", "Verde", "Azul", "Amarillo", "Morado", "Naranja"];
+console.log("Colores iniciales:", colors.toString() ); // "Rojo,Verde,Azul,Amarillo,Morado,Naranja"
+console.log("Colores iniciales:", colors.join(" - ") ); // "Rojo - Verde - Azul - Amarillo - Morado - Naranja"
+
+// Agregar 2 elementos en el índice 2, sin eliminar otros elementos
+colors.splice(2, 0, "Rosa", "Cian");
+console.log("Después de agregar con splice:", colors.toString() );
+
+// TODO EJERCICIO RÁPIDO:
+// 1. Crea un array 'guestList' con 2 nombres.
+// 2. Agrega un invitado al final.
+// 3. Agrega un invitado al principio
+// 4. Elimina al segundo invitado (índice 1) y agrega a otro en su lugar.
+// 4. Muestra la lista final.
